@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .navbar a {
+            text-decoration: none;
+            color: brown;
+            background-color: white;
+            border:1px solid white;
+            border-radius: 15px;  
+            padding: 15px; 
+            text-align:center; /* indhulo a ki margin-top yendhuku echav ?   aaaa links konchem kindaki raavali ani aaa space then navbar mothaniki evali kadha a ki estha yela okay na ok ram gaaru*/
+          }
+          .navbar{
+            width:50%;
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+            margin-top:15px;
+          }
+          
+          body {
+            background-image: url("https://wallpapercave.com/wp/ijo8KeK.jpg");
+            background-repeat: no-repeat;
+            background-position: top right;
+            background-attachment: fixed;
+            background-size: 100%;
+          
+          }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{{url_for('info')}}">all info</a>
+        <a href="{{url_for('add')}}">add Books</a>
+        <a href="{{url_for('update')}}">update Books</a>
+        <a href="{{url_for('delete')}}">delete Books</a>
+    </nav>
+</body>
+</html>
